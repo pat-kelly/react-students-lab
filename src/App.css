@@ -17,6 +17,8 @@ p{
   max-width: 20vw;
   text-align: left;
   color: rgba(0,0,0,.8);
+  opacity: 1;
+  top:50px;
 }
 
 .em{
@@ -25,15 +27,15 @@ p{
   color:black;
 }
 
+.grades{
+  padding:5px 10px;
+  font-size: 18px;
+}
+
 .hidden{
   opacity: 0;
   top: -100px;
   z-index: -10;
-}
-
-.enter{
-  opacity: 1;
-  top:50px;
 }
 
 .App {
@@ -46,6 +48,7 @@ p{
 }
 
 .student-container{
+  top:-100px;
   position: relative;
   max-width: 20vw;
   min-width: 20vw;

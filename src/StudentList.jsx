@@ -14,3 +14,4 @@ export default function StudentList(){
     </>
   )
 }
+//<p className="enter"><span className="em">Bio: </span>{bio}</p>
