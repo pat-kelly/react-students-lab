@@ -4,8 +4,7 @@ import Score from "./Score";
 
 export default function Student(props){
 
-  const id=props.student.key,
-    name=props.student.name,
+  const name=props.student.name,
     bio = props.student.bio,
     scores = props.student.scores;
 
