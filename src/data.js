@@ -56,6 +56,24 @@ const studentList = [
         score: 85
       }
     ]
+  },
+  {
+    name: 'Thadwick Mercer',
+    bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, accusantium nulla harum deserunt ullam atque possimus dolore animi totam hic qui, earum facilis dignissimos, quae rem doloribus odio officia quis.',
+    scores: [
+      {
+        date: '2019-15-10',
+        score: 59
+      },
+      {
+        date: '2018-11-24',
+        score: 30
+      },
+      {
+        date: '2018-12-19',
+        score: 42
+      }
+    ]
   }
 ]
 

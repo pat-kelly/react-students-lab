@@ -55,6 +55,7 @@ button:hover{
   align-items: center;
   gap:5vw;
   height:100vh;
+  flex-wrap: wrap;
 }
 
 .student-container{
