@@ -12,5 +12,3 @@ export default function StudentDetail(props){
     </>
   )
 }
-
-//<p className="enter"><span className="em">Bio: </span>{bio}</p>

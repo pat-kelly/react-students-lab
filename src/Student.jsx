@@ -1,5 +1,6 @@
 import { useState } from "react";
 import StudentDetail from "./StudentDetail";
+import Score from "./Score";
 
 export default function Student(props){
 
@@ -12,28 +13,26 @@ export default function Student(props){
   const [showGrades, setShowGrades] = useState(false);
 
   function handleShowBio(){
-    if(showBio){
       setShowBio(!showBio);
       StudentDetail(props);
-    }else{
-      setShowBio(!showBio);
-      StudentDetail(props);
-    }
   }
 
   function handleShowGrades(){
-    
+    setShowGrades(!showGrades);
   }
 
   return(
-    <div className="student-container">
+    <>
+      <div className="student-container">
       <button onClick={handleShowBio}><h3>{name}</h3></button>
-      <p id={name} className="hidden">
-        <span className="em">Bio: </span>
-        {bio}
-        <br/>
-        <button onClick={handleShowGrades} className="grades">Show Grades</button>
-      </p>
-    </div>
+        <div id={name} className="hidden bio">
+          <span className="em">Bio: </span>
+          {bio}
+          <br/>
+          <button /* disabled = {showGrades} */ onClick={handleShowGrades} className="grades">Show Grades</button>
+          {showGrades && <Score scores={scores} />}
+        </div>
+      </div>
+    </>
   )
 }
